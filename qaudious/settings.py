@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    'transcribe_audio',
 ]
 
 MIDDLEWARE = [
@@ -86,6 +88,8 @@ DATABASES = {
    'default' : {
       'ENGINE' : 'djongo',
       'NAME' : 'quadious',
+      'USER': 'admin',
+      'PASSWORD': 'admin',
    }
 }
 
