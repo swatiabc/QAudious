@@ -18,7 +18,6 @@ from django.urls import path,include
 
 
 urlpatterns = [
-    path('polls/', include('transcribe_audio.urls')),
     path('admin/', admin.site.urls),
 ]
 
