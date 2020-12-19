@@ -15,10 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path,include
-from transcribe_audio.views import upload_page
+from transcribe_audio.views import( upload_page, local_page, drive_page,)
 
 urlpatterns = [
-    path('', upload_page),
+    path('upload.html', upload_page),
+    path('local.html', local_page),
+    path('drive.html', drive_page),
     path('admin/', admin.site.urls),
 ]
 
