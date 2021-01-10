@@ -7,8 +7,8 @@
 <title>local</title>
 <style id="applicationStylesheet" type="text/css">
 	.mediaViewInfo {
-		--web-view-name: local;
-		--web-view-id: local;
+		--web-view-name: outside_local;
+		--web-view-id: outside_local;
 		--web-scale-to-fit: true;
 		--web-scale-to-fit-type: width;
 		--web-scale-on-resize: true;
@@ -17,7 +17,7 @@
 		--web-enable-deep-linking: true;
 	}
 	:root {
-		--web-view-ids: local;
+		--web-view-ids: outside_local;
 	}
 	* {
 		margin: 0;
@@ -25,7 +25,9 @@
 		box-sizing: border-box;
 		border: none;
 	}
+
 	#local {
+		display: inline;
 		position: absolute;
 		width: 1920px;
 		height: 900px;
@@ -40,6 +42,295 @@
 		--web-center-vertically: true;
 		--web-enable-deep-linking: true;
 	}
+
+	/**edited by swati**/
+	#outside_local {
+		display: inline;
+		position: absolute;
+		width: 1920px;
+		height: 900px;
+		background-color: rgba(255,255,255,1);
+		overflow: hidden;
+		--web-view-name: local;
+		--web-view-id: local;
+		--web-scale-to-fit: true;
+		--web-scale-to-fit-type: width;
+		--web-scale-on-resize: true;
+		--web-center-horizontally: true;
+		--web-center-vertically: true;
+		--web-enable-deep-linking: true;
+	}
+	#upload_local {
+		display: none;
+		position: absolute;
+		width: 1920px;
+		height: 900px;
+		background-color: rgba(255,255,255,1);
+		overflow: hidden;
+		--web-view-name: upload_local;
+		--web-view-id: upload_local;
+		--web-scale-to-fit: true;
+		--web-scale-to-fit-type: width;
+		--web-scale-on-resize: true;
+		--web-center-horizontally: true;
+		--web-center-vertically: true;
+		--web-enable-deep-linking: true;
+	}
+	#waveform_pg {
+		opacity: 0.22;
+		filter: drop-shadow(0px 3px 6px rgba(255, 255, 255, 0.161)) blur(7px);
+		position: absolute;
+		width: 444px;
+		height: 434px;
+		left: 1003px;
+		top: 17px;
+		overflow: visible;
+	}
+	#qaudious_logo_ph {
+		display: none;
+		position: absolute;
+		width: 728px;
+		height: 362px;
+		left: 256px;
+		top: 86px;
+		overflow: visible;
+	}
+	#-_An_NLP_Based_Question_Answer_pi {
+		opacity: 0.66;
+		filter: blur(7px);
+		left: 553px;
+		top: 135px;
+		position: absolute;
+		overflow: visible;
+		width: 860px;
+		height: 99px;
+		text-align: left;
+		font-family: Corbel;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 28px;
+		color: rgba(0,0,0,1);
+		text-transform: capitalize;
+	}
+	#navbar_pj {
+		filter: blur(7px);
+		position: absolute;
+		width: 86px;
+		height: 86px;
+		left: 1801px;
+		top: 46px;
+		overflow: visible;
+	}
+	#arrow_pk {
+		filter: blur(7px);
+		position: absolute;
+		width: 84px;
+		height: 126.218px;
+		left: 918.5px;
+		top: 773.417px;
+		overflow: visible;
+	}
+	#Rectangle_9_pl {
+		filter: blur(7px);
+		fill: rgba(255,255,255,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_9_pl {
+		position: absolute;
+		overflow: visible;
+		width: 1615px;
+		height: 365px;
+		left: 181px;
+		top: 370.438px;
+	}
+	#Upload_Media_pm {
+		left: 813px;
+		top: 422.114px;
+		position: absolute;
+		overflow: visible;
+		width: 295px;
+		height: 82px;
+		text-align: left;
+		font-family: Corbel;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 50px;
+		color: rgba(0,0,0,1);
+	}
+	#back_pn {
+		filter: blur(7px);
+		position: absolute;
+		width: 45px;
+		height: 27.5px;
+		left: 35px;
+		top: 288.485px;
+		overflow: visible;
+	}
+	#Line_18_po {
+		filter: blur(7px);
+		fill: transparent;
+		stroke: rgba(0,0,0,1);
+		stroke-width: 5px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-dasharray: 0 1;
+		stroke-dashoffset: 0;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Line_18_po {
+		overflow: visible;
+		position: absolute;
+		width: 487.034px;
+		height: 50px;
+		left: 70.5px;
+		top: 183.648px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#ql_pp {
+		filter: blur(7px);
+		position: absolute;
+		width: 515px;
+		height: 256px;
+		left: 0px;
+		top: -32.5px;
+		overflow: visible;
+	}
+	#Rectangle_10_pq {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(0,0,0,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_10_pq {
+		filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.161));
+		position: absolute;
+		overflow: visible;
+		width: 885px;
+		height: 562px;
+		left: 525px;
+		top: 206px;
+	}
+	#Rectangle_11_pr {
+		fill: rgba(193,193,193,1);
+	}
+	.Rectangle_11_pr {
+		position: absolute;
+		overflow: visible;
+		width: 137px;
+		height: 50px;
+		left: 892px;
+		top: 626.359px;
+	}
+	#Upload_ps {
+		left: 917px;
+		top: 637.046px;
+		position: absolute;
+		overflow: hidden;
+		width: 87px;
+		height: 31px;
+		--web-animation: fadein 0.3s ease-out;
+		--web-action-type: page;
+		--web-action-target: post_question.html;
+		cursor: pointer;
+		text-align: left;
+		font-family: Corbel;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 26px;
+		color: rgba(0,0,0,1);
+	}
+	#ic_insert_drive_file_24px {
+		fill: rgba(0,0,0,1);
+	}
+	.ic_insert_drive_file_24px {
+		overflow: visible;
+		position: absolute;
+		width: 73.551px;
+		height: 91.938px;
+		left: 923px;
+		top: 404px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Image_1_pu {
+		position: absolute;
+		width: 40px;
+		height: 44px;
+		left: 997px;
+		top: 381.544px;
+		overflow: visible;
+		--web-animation: fadein 0.3s ease-out;
+		--web-action-type: page;
+		--web-action-target: local.html;
+		cursor: pointer;
+	}
+	#Ellipse_4_pv {
+		filter: blur(7px);
+		fill: rgba(255,160,160,1);
+		stroke: rgba(255,160,160,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Ellipse_4_pv {
+		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 1));
+		position: absolute;
+		overflow: visible;
+		width: 103px;
+		height: 104px;
+		left: 70px;
+		top: 825px;
+	}
+	#Ellipse_5_pw {
+		filter: blur(7px);
+		fill: rgba(255,242,61,1);
+		stroke: rgba(255,242,61,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Ellipse_5_pw {
+		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 1));
+		position: absolute;
+		overflow: visible;
+		width: 103px;
+		height: 104px;
+		left: 133px;
+		top: 825px;
+	}
+	#Ellipse_6_px {
+		filter: blur(7px);
+		fill: rgba(40,206,255,1);
+		stroke: rgba(40,206,255,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Ellipse_6_px {
+		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 1));
+		position: absolute;
+		overflow: visible;
+		width: 103px;
+		height: 104px;
+		left: 196px;
+		top: 825px;
+	}
+	/**edited by swati**/
+
 	@keyframes fadein {
 	
 		0% {
@@ -347,6 +638,31 @@
 		left: 196px;
 		top: 825px;
 	}
+
+	.file_upload {
+		opacity: 0.0;
+
+		/* IE 8 */
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+
+		/* IE 5-7 */
+		filter: alpha(opacity=0);
+		
+		/* Netscape or and older firefox browsers */
+		-moz-opacity: 0.0;
+
+		/* older Safari browsers */
+		-khtml-opacity: 0.0;
+
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		width: 100%;
+		height:100%;
+	}
+
 </style>
 <script id="applicationScript">
 ///////////////////////////////////////
@@ -3185,9 +3501,18 @@ var Application = function() {
 }
 
 window.application = new Application();
+
+/**edited by swati**/
+function showFileName() {
+  document.getElementById("local").style.display="none"
+  document.getElementById("upload_local").style.display="inline";
+}
+/**edited by swati**/
+
 </script>
 </head>
 <body>
+<div id="outside_local">
 <div id="local">
 	<img id="waveform_d" src="waveform_d.png" srcset="waveform_d.png 1x">
 		
@@ -3214,11 +3539,12 @@ window.application = new Application();
 		</path>
 	</svg>
 	<img id="ql_ee" src="ql_ee.png" srcset="ql_ee.png 1x">
-		
+	
 	<svg class="Rectangle_10">
 		<rect id="Rectangle_10" rx="0" ry="0" x="0" y="0" width="870" height="547">
 		</rect>
 	</svg>
+
 	<img id="cloud" src="cloud.png" srcset="cloud.png 1x">
 		
 	<div onclick="application.goToTargetView(event)" id="Drive">
@@ -3231,9 +3557,14 @@ window.application = new Application();
 		<rect id="Rectangle_11" rx="25" ry="25" x="0" y="0" width="137" height="50">
 		</rect>
 	</svg>
-	<div id="Browse">
+
+	<form method="post" enctype="multipart/form-data">
+		{% csrf_token %}
+		<div id="Browse">
 		<span>Browse</span>
+		<input name="uploaded_file" type="file" class="file_upload" onchange="showFileName()" required>
 	</div>
+	</form>
 	<img onclick="application.goToTargetView(event)" id="Image_1" src="Image_1.png" srcset="Image_1.png 1x">
 		
 	<div id="Select_Media">
@@ -3251,6 +3582,65 @@ window.application = new Application();
 		<ellipse id="Ellipse_6_ep" rx="21.5" ry="22" cx="21.5" cy="22">
 		</ellipse>
 	</svg>
+</div>
+
+<div id="upload_local">
+	<img id="waveform_pg" src="waveform_pg.png" srcset="waveform_pg.png 1x">
+		
+	<img id="qaudious_logo_ph" src="qaudious_logo_ph.png" srcset="qaudious_logo_ph.png 1x">
+		
+	<div id="-_An_NLP_Based_Question_Answer_pi">
+		<span>- An NLP Based Question Answering System for Academic Lecture Recordings.</span>
+	</div>
+	<img id="navbar_pj" src="navbar_pj.png" srcset="navbar_pj.png 1x">
+		
+	<img id="arrow_pk" src="arrow_pk.png" srcset="arrow_pk.png 1x">
+		
+	<svg class="Rectangle_9_pl">
+		<rect id="Rectangle_9_pl" rx="161.5" ry="161.5" x="0" y="0" width="1573" height="323">
+		</rect>
+	</svg>
+	<div id="Upload_Media_pm">
+		<span>Upload Media</span>
+	</div>
+	<img id="back_pn" src="back_pn.png" srcset="back_pn.png 1x">
+		
+	<svg class="Line_18_po" viewBox="0 0 445 3">
+		<path id="Line_18_po" d="M 445 3 L 0 0">
+		</path>
+	</svg>
+	<img id="ql_pp" src="ql_pp.png" srcset="ql_pp.png 1x">
+		
+	<svg class="Rectangle_10_pq">
+		<rect id="Rectangle_10_pq" rx="0" ry="0" x="0" y="0" width="870" height="547">
+		</rect>
+	</svg>
+	<svg class="Rectangle_11_pr">
+		<rect id="Rectangle_11_pr" rx="25" ry="25" x="0" y="0" width="137" height="50">
+		</rect>
+	</svg>
+	<div onclick="application.goToTargetView(event)" id="Upload_ps">
+		<span>Upload</span>
+	</div>
+	<svg class="ic_insert_drive_file_24px" viewBox="4 2 73.551 91.938">
+		<path id="ic_insert_drive_file_24px" d="M 13.19384765625 2 C 8.137231826782227 2 4.045970916748047 6.137231826782227 4.045970916748047 11.19384765625 L 4 84.74462890625 C 4 89.80124664306641 8.09126091003418 93.9384765625 13.14787673950195 93.9384765625 L 68.35693359375 93.9384765625 C 73.41355133056641 93.9384765625 77.55078125 89.80124664306641 77.55078125 84.74462890625 L 77.55078125 29.58154296875 L 49.96923828125 2 L 13.19384765625 2 Z M 45.372314453125 34.178466796875 L 45.372314453125 8.8953857421875 L 70.6553955078125 34.178466796875 L 45.372314453125 34.178466796875 Z">
+		</path>
+	</svg>
+	<img onclick="application.goToTargetView(event)" id="Image_1_pu" src="Image_1_pu.png" srcset="Image_1_pu.png 1x">
+		
+	<svg class="Ellipse_4_pv">
+		<ellipse id="Ellipse_4_pv" rx="21.5" ry="22" cx="21.5" cy="22">
+		</ellipse>
+	</svg>
+	<svg class="Ellipse_5_pw">
+		<ellipse id="Ellipse_5_pw" rx="21.5" ry="22" cx="21.5" cy="22">
+		</ellipse>
+	</svg>
+	<svg class="Ellipse_6_px">
+		<ellipse id="Ellipse_6_px" rx="21.5" ry="22" cx="21.5" cy="22">
+		</ellipse>
+	</svg>
+</div>
 </div>
 </body>
 </html>
