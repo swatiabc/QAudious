@@ -50,8 +50,6 @@ def local_page(request):
 def drive_page(request):
     return render(request,"drive.html")
 
-def post_question(request):
-    return render(request,"post_question.html")
 
 @require_http_methods(['GET', 'POST'])
 def home_view(request):

@@ -297,6 +297,31 @@
 		left: 196px;
 		top: 825px;
 	}
+
+	.file_upload {
+		opacity: 0.0;
+
+		/* IE 8 */
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+
+		/* IE 5-7 */
+		filter: alpha(opacity=0);
+		
+		/* Netscape or and older firefox browsers */
+		-moz-opacity: 0.0;
+
+		/* older Safari browsers */
+		-khtml-opacity: 0.0;
+
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		width: 100%;
+		height:100%;
+	}
+
 </style>
 <script id="applicationScript">
 ///////////////////////////////////////
@@ -3139,6 +3164,8 @@ window.application = new Application();
 </head>
 <body>
 <div id="post_question">
+	<form method="post" enctype="multipart/form-data" target="question_2.html" >
+		{% csrf_token %}
 	<img id="waveform_ff" src="waveform_ff.png" srcset="waveform_ff.png 1x">
 		
 	<img id="qaudious_logo_fg" src="qaudious_logo_fg.png" srcset="qaudious_logo_fg.png 1x">
@@ -3167,15 +3194,20 @@ window.application = new Application();
 		<rect id="Rectangle_13" rx="0" ry="0" x="0" y="0" width="1392" height="327.5">
 		</rect>
 	</svg>
+	<input name="uploaded_question" type="text" required class="Rectangle_13" >
+
 	<div onclick="application.goToTargetView(event)" id="Repeat_Grid_2">
 		<div id="Repeat_Grid_2_0" class="">
 			<svg class="Rectangle_14">
 				<rect id="Rectangle_14" rx="0" ry="0" x="0" y="0" width="150" height="43">
 				</rect>
 			</svg>
+			<!--edited by swati-->
 			<div id="Submit">
 				<span>Submit</span>
+				<input type="submit" class="file_upload" >
 			</div>
+			<!--edited by swati-->
 		</div>
 	</div>
 	<svg class="Ellipse_4_ft">
@@ -3190,6 +3222,7 @@ window.application = new Application();
 		<ellipse onclick="application.goToTargetView(event)" id="Ellipse_6_fv" rx="21.5" ry="22" cx="21.5" cy="22">
 		</ellipse>
 	</svg>
+	</form>
 </div>
 </body>
 </html>

@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'transcribe_audio',
+    'question_answer',
 ]
 
 MIDDLEWARE = [

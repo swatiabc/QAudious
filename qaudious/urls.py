@@ -15,7 +15,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path,include
-from transcribe_audio.views import( upload_page, local_page, drive_page,post_question,home_view,)
+from transcribe_audio.views import( upload_page, local_page, drive_page,home_view,)
+from question_answer.views import(question_page,qa_display_page,qa_saved_page,post_question, )
 
 urlpatterns = [
     path('upload.html', upload_page),
@@ -23,6 +24,9 @@ urlpatterns = [
     path('', home_view),
     path('drive.html', drive_page),
     path('post_question.html', post_question),
+    path('question_2.html',question_page),
+    path('qa_display.html',qa_display_page),
+    path('qa_saved.html',qa_saved_page),
     path('admin/', admin.site.urls),
 ]
 
