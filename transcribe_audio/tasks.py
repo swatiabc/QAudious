@@ -142,4 +142,4 @@ def get_large_audio_transcription(audio_data):
     audio_data.time_taken = timezone.now() - audio_data.created_at
     print(timezone.now() - audio_data.created_at)
     audio_data.save()
-    return whole_text
+    return 

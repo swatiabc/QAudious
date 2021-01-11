@@ -1,3 +1,6 @@
 *.pyc
 *.wav
 
+env/Lib/site-packages/models_used/Demo-Europarl-EN.pcl
+env/Lib/site-packages/models_used/INTERSPEECH-T-BRNN-pre.pcl
+env/Lib/site-packages/models_used/INTERSPEECH-T-BRNN.pcl
