@@ -1,6 +1,6 @@
 from __future__ import absolute_import, unicode_literals
 from uuid import uuid4
-
+from punctuator import Punctuator
 import speech_recognition as sr
 from pydub import AudioSegment
 from pydub.silence import split_on_silence
@@ -132,9 +132,12 @@ def get_large_audio_transcription(audio_data):
                 whole_text += text
     # return the text for all chunks detected
 
+    p = Punctuator('Demo-Europarl-EN.pcl')
+    text = p.punctuate(whole_text)
+    print(text)
 
     # Save the transcript in the database
-    audio_data.transcript = whole_text
+    audio_data.transcript = text
     audio_data.status = 'COM'
     audio_data.time_taken = timezone.now() - audio_data.created_at
     print(timezone.now() - audio_data.created_at)
