@@ -27,3 +27,4 @@ class AudioDataModel(models.Model):
 
     def __str__(self):
         return f'{self.uploaded_file} - {self.created_at}'
+    
