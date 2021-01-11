@@ -34,9 +34,9 @@ def local_page(request):
         audio_data.save()
 
         # Begin processing
-        tasks.process_uploaded_file.delay(audio_data.id)
+        tasks.process_uploaded_file(audio_data.id)
 
-        return HttpResponseRedirect('local.html')
+        return HttpResponseRedirect('post_question.html')
 
     except Exception as e:
 

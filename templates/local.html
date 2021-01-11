@@ -3513,6 +3513,8 @@ function showFileName() {
 </head>
 <body>
 <div id="outside_local">
+	<form method="post" enctype="multipart/form-data">
+		{% csrf_token %}
 <div id="local">
 	<img id="waveform_d" src="waveform_d.png" srcset="waveform_d.png 1x">
 		
@@ -3558,13 +3560,13 @@ function showFileName() {
 		</rect>
 	</svg>
 
-	<form method="post" enctype="multipart/form-data">
-		{% csrf_token %}
+	<!-- <form method="post" enctype="multipart/form-data">
+		{% csrf_token %} -->
 		<div id="Browse">
 		<span>Browse</span>
 		<input name="uploaded_file" type="file" class="file_upload" onchange="showFileName()" required>
 	</div>
-	</form>
+	<!-- </form> -->
 	<img onclick="application.goToTargetView(event)" id="Image_1" src="Image_1.png" srcset="Image_1.png 1x">
 		
 	<div id="Select_Media">
@@ -3621,6 +3623,7 @@ function showFileName() {
 	</svg>
 	<div onclick="application.goToTargetView(event)" id="Upload_ps">
 		<span>Upload</span>
+		<input type="submit" class="file_upload" >
 	</div>
 	<svg class="ic_insert_drive_file_24px" viewBox="4 2 73.551 91.938">
 		<path id="ic_insert_drive_file_24px" d="M 13.19384765625 2 C 8.137231826782227 2 4.045970916748047 6.137231826782227 4.045970916748047 11.19384765625 L 4 84.74462890625 C 4 89.80124664306641 8.09126091003418 93.9384765625 13.14787673950195 93.9384765625 L 68.35693359375 93.9384765625 C 73.41355133056641 93.9384765625 77.55078125 89.80124664306641 77.55078125 84.74462890625 L 77.55078125 29.58154296875 L 49.96923828125 2 L 13.19384765625 2 Z M 45.372314453125 34.178466796875 L 45.372314453125 8.8953857421875 L 70.6553955078125 34.178466796875 L 45.372314453125 34.178466796875 Z">
@@ -3641,6 +3644,7 @@ function showFileName() {
 		</ellipse>
 	</svg>
 </div>
+</form>
 </div>
 </body>
 </html>
