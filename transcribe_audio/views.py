@@ -32,7 +32,7 @@ def local_page(request):
         print("3333333333333333333333")
         audio_data.uploaded_file=uploaded_file
         audio_data.save()
-
+        request.session["transcript"]=audio_data.id
         # Begin processing
         tasks.process_uploaded_file(audio_data.id)
 
@@ -76,10 +76,9 @@ def home_view(request):
         audio_data.uploaded_file=uploaded_file
         audio_data.save()
         # audio_data = models.AudioDataModel.objects.create(uploaded_file=uploaded_file)
-
+        # request.session["transcript"]=audio_data
         # Begin processing
         tasks.process_uploaded_file(audio_data.id)
-
         return HttpResponseRedirect('/')
 
     except Exception as e:
