@@ -27,7 +27,6 @@ def post_question(request):
     uploaded_question = request.POST['uploaded_question']
     qa_data = models.QADataModel()
     qa_data.question = uploaded_question
-    
     try:
         qa_data.transcript = AudioDataModel.objects.get(id=request.session['transcript'])
     except (KeyError, AudioDataModel.DoesNotExist):
