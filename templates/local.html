@@ -1,3 +1,4 @@
+{%load static%}
 <!DOCTYPE html>
 <html>
 <head>
@@ -3516,16 +3517,16 @@ function showFileName() {
 	<form method="post" enctype="multipart/form-data">
 		{% csrf_token %}
 <div id="local">
-	<img id="waveform_d" src="waveform_d.png" srcset="waveform_d.png 1x">
+	<img id="waveform_d" src="{% static 'waveform_d.png' %}" >
 		
-	<img id="qaudious_logo_d" src="qaudious_logo_d.png" srcset="qaudious_logo_d.png 1x">
+	<img id="qaudious_logo_d" src="{% static 'qaudious_logo_d.png' %}" >
 		
 	<div id="-_An_NLP_Based_Question_Answer_d">
 		<span>- An NLP Based Question Answering System for Academic Lecture Recordings.</span>
 	</div>
-	<img id="navbar_d" src="navbar_d.png" srcset="navbar_d.png 1x">
+	<img id="navbar_d" src="{% static 'navbar_d.png' %}" >
 		
-	<img id="arrow_d" src="arrow_d.png" srcset="arrow_d.png 1x">
+	<img id="arrow_d" src="{% static 'arrow_d.png' %}" >
 		
 	<svg class="Rectangle_9_ea">
 		<rect id="Rectangle_9_ea" rx="161.5" ry="161.5" x="0" y="0" width="1573" height="323">
@@ -3534,20 +3535,20 @@ function showFileName() {
 	<div id="Upload_Media_eb">
 		<span>Upload Media</span>
 	</div>
-	<img id="back_ec" src="back_ec.png" srcset="back_ec.png 1x">
+	<img id="back_ec" src="{% static 'back_ec.png' %}" >
 		
 	<svg class="Line_18_ed" viewBox="0 0 445 3">
 		<path id="Line_18_ed" d="M 445 3 L 0 0">
 		</path>
 	</svg>
-	<img id="ql_ee" src="ql_ee.png" srcset="ql_ee.png 1x">
+	<img id="ql_ee" src="{% static 'ql_ee.png' %}" >
 	
 	<svg class="Rectangle_10">
 		<rect id="Rectangle_10" rx="0" ry="0" x="0" y="0" width="870" height="547">
 		</rect>
 	</svg>
 
-	<img id="cloud" src="cloud.png" srcset="cloud.png 1x">
+	<img id="cloud" src="{% static 'cloud.png' %}" >
 		
 	<div onclick="application.goToTargetView(event)" id="Drive">
 		<span>Drive</span>
@@ -3567,7 +3568,7 @@ function showFileName() {
 		<input name="uploaded_file" type="file" class="file_upload" onchange="showFileName()" required>
 	</div>
 	<!-- </form> -->
-	<img onclick="application.goToTargetView(event)" id="Image_1" src="Image_1.png" srcset="Image_1.png 1x">
+	<img onclick="application.goToTargetView(event)" id="Image_1" src="{% static 'Image_1.png' %}" >
 		
 	<div id="Select_Media">
 		<span>Select Media</span>
@@ -3587,16 +3588,16 @@ function showFileName() {
 </div>
 
 <div id="upload_local">
-	<img id="waveform_pg" src="waveform_pg.png" srcset="waveform_pg.png 1x">
+	<img id="waveform_pg" src="{% static 'waveform_pg.png' %}" >
 		
-	<img id="qaudious_logo_ph" src="qaudious_logo_ph.png" srcset="qaudious_logo_ph.png 1x">
+	<img id="qaudious_logo_ph" src="{% static 'qaudious_logo_ph.png' %}" >
 		
 	<div id="-_An_NLP_Based_Question_Answer_pi">
 		<span>- An NLP Based Question Answering System for Academic Lecture Recordings.</span>
 	</div>
-	<img id="navbar_pj" src="navbar_pj.png" srcset="navbar_pj.png 1x">
+	<img id="navbar_pj" src="{% static 'navbar_pj.png' %}" >
 		
-	<img id="arrow_pk" src="arrow_pk.png" srcset="arrow_pk.png 1x">
+	<img id="arrow_pk" src="{% static 'arrow_pk.png' %}" >
 		
 	<svg class="Rectangle_9_pl">
 		<rect id="Rectangle_9_pl" rx="161.5" ry="161.5" x="0" y="0" width="1573" height="323">
@@ -3605,13 +3606,13 @@ function showFileName() {
 	<div id="Upload_Media_pm">
 		<span>Upload Media</span>
 	</div>
-	<img id="back_pn" src="back_pn.png" srcset="back_pn.png 1x">
+	<img id="back_pn" src="{% static 'back_pn.png' %}" >
 		
 	<svg class="Line_18_po" viewBox="0 0 445 3">
 		<path id="Line_18_po" d="M 445 3 L 0 0">
 		</path>
 	</svg>
-	<img id="ql_pp" src="ql_pp.png" srcset="ql_pp.png 1x">
+	<img id="ql_pp" src="{% static 'ql_pp.png' %}" >
 		
 	<svg class="Rectangle_10_pq">
 		<rect id="Rectangle_10_pq" rx="0" ry="0" x="0" y="0" width="870" height="547">
@@ -3629,7 +3630,7 @@ function showFileName() {
 		<path id="ic_insert_drive_file_24px" d="M 13.19384765625 2 C 8.137231826782227 2 4.045970916748047 6.137231826782227 4.045970916748047 11.19384765625 L 4 84.74462890625 C 4 89.80124664306641 8.09126091003418 93.9384765625 13.14787673950195 93.9384765625 L 68.35693359375 93.9384765625 C 73.41355133056641 93.9384765625 77.55078125 89.80124664306641 77.55078125 84.74462890625 L 77.55078125 29.58154296875 L 49.96923828125 2 L 13.19384765625 2 Z M 45.372314453125 34.178466796875 L 45.372314453125 8.8953857421875 L 70.6553955078125 34.178466796875 L 45.372314453125 34.178466796875 Z">
 		</path>
 	</svg>
-	<img onclick="application.goToTargetView(event)" id="Image_1_pu" src="Image_1_pu.png" srcset="Image_1_pu.png 1x">
+	<img onclick="application.goToTargetView(event)" id="Image_1_pu" src="{% static 'Image_1_pu.png' %}" >
 		
 	<svg class="Ellipse_4_pv">
 		<ellipse id="Ellipse_4_pv" rx="21.5" ry="22" cx="21.5" cy="22">

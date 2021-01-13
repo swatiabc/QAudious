@@ -1,3 +1,4 @@
+{%load static%}
 <!DOCTYPE html>
 <html>
 <head>
@@ -3145,16 +3146,16 @@ window.application = new Application();
 </head>
 <body>
 <div id="upload_drive">
-	<img id="waveform_p" src="waveform_p.png" srcset="waveform_p.png 1x">
+	<img id="waveform_p" src="{% static 'waveform_p.png' %}" >
 		
-	<img id="qaudious_logo_p" src="qaudious_logo_p.png" srcset="qaudious_logo_p.png 1x">
+	<img id="qaudious_logo_p" src="{% static 'qaudious_logo_p.png' %}" >
 		
 	<div id="-_An_NLP_Based_Question_Answer_p">
 		<span>- An NLP Based Question Answering System for Academic Lecture Recordings.</span>
 	</div>
-	<img id="navbar_p" src="navbar_p.png" srcset="navbar_p.png 1x">
+	<img id="navbar_p" src="{% static 'navbar_p.png' %}" >
 		
-	<img id="arrow_p" src="arrow_p.png" srcset="arrow_p.png 1x">
+	<img id="arrow_p" src="{% static 'arrow_p.png' %}" >
 		
 	<svg class="Rectangle_9_p">
 		<rect id="Rectangle_9_p" rx="161.5" ry="161.5" x="0" y="0" width="1573" height="323">
@@ -3163,13 +3164,13 @@ window.application = new Application();
 	<div id="Upload_Media_p">
 		<span>Upload Media</span>
 	</div>
-	<img id="back_p" src="back_p.png" srcset="back_p.png 1x">
+	<img id="back_p" src="{% static 'back_p.png' %}" >
 		
 	<svg class="Line_18_p" viewBox="0 0 445 3">
 		<path id="Line_18_p" d="M 445 3 L 0 0">
 		</path>
 	</svg>
-	<img id="ql_p" src="ql_p.png" srcset="ql_p.png 1x">
+	<img id="ql_p" src="{% static 'ql_p.png' %}" >
 		
 	<svg class="Rectangle_10_qa">
 		<rect id="Rectangle_10_qa" rx="0" ry="0" x="0" y="0" width="870" height="547">
@@ -3182,7 +3183,7 @@ window.application = new Application();
 	<div onclick="application.goToTargetView(event)" id="Upload_qc">
 		<span>Upload</span>
 	</div>
-	<img onclick="application.goToTargetView(event)" id="Image_1_qd" src="Image_1_qd.png" srcset="Image_1_qd.png 1x">
+	<img onclick="application.goToTargetView(event)" id="Image_1_qd" src="{% static 'Image_1_qd.png' %}" >
 		
 	<svg class="ic_insert_drive_file_24px_qe" viewBox="4 2 73.551 91.938">
 		<path id="ic_insert_drive_file_24px_qe" d="M 13.19384765625 2 C 8.137231826782227 2 4.045970916748047 6.137231826782227 4.045970916748047 11.19384765625 L 4 84.74462890625 C 4 89.80124664306641 8.09126091003418 93.9384765625 13.14787673950195 93.9384765625 L 68.35693359375 93.9384765625 C 73.41355133056641 93.9384765625 77.55078125 89.80124664306641 77.55078125 84.74462890625 L 77.55078125 29.58154296875 L 49.96923828125 2 L 13.19384765625 2 Z M 45.372314453125 34.178466796875 L 45.372314453125 8.8953857421875 L 70.6553955078125 34.178466796875 L 45.372314453125 34.178466796875 Z">

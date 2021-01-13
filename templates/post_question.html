@@ -1,3 +1,4 @@
+{%load static%}
 <!DOCTYPE html>
 <html>
 <head>
@@ -3166,22 +3167,22 @@ window.application = new Application();
 <div id="post_question">
 	<form method="post" enctype="multipart/form-data" >
 		{% csrf_token %}
-	<img id="waveform_ff" src="waveform_ff.png" srcset="waveform_ff.png 1x">
+	<img id="waveform_ff" src="{% static 'waveform_ff.png' %}" >
 		
-	<img id="qaudious_logo_fg" src="qaudious_logo_fg.png" srcset="qaudious_logo_fg.png 1x">
+	<img id="qaudious_logo_fg" src="{% static 'qaudious_logo_fg.png' %}" >
 		
 	<div id="-_An_NLP_Based_Question_Answer_fh">
 		<span>- An NLP Based Question Answering System for Academic Lecture Recordings.</span>
 	</div>
-	<img onclick="application.goToTargetView(event)" id="navbar_fi" src="navbar_fi.png" srcset="navbar_fi.png 1x">
+	<img onclick="application.goToTargetView(event)" id="navbar_fi" src="{% static 'navbar_fi.png' %}" >
 		
-	<img onclick="application.goToTargetView(event)" id="back_fj" src="back_fj.png" srcset="back_fj.png 1x">
+	<img onclick="application.goToTargetView(event)" id="back_fj" src="{% static 'back_fj.png' %}" >
 		
 	<svg class="Line_18_fk" viewBox="0 0 445 3">
 		<path id="Line_18_fk" d="M 445 3 L 0 0">
 		</path>
 	</svg>
-	<img id="ql_fl" src="ql_fl.png" srcset="ql_fl.png 1x">
+	<img id="ql_fl" src="{% static 'ql_fl.png' %}" >
 		
 	<div id="Enter_your_query">
 		<span>Enter your query</span>

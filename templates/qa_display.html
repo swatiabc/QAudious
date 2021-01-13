@@ -1,3 +1,4 @@
+{%load static%}
 <!DOCTYPE html>
 <html>
 <head>
@@ -3182,22 +3183,22 @@ window.application = new Application();
 </head>
 <body>
 <div id="qa_display">
-	<img id="waveform_fy" src="waveform_fy.png" srcset="waveform_fy.png 1x">
+	<img id="waveform_fy" src="{% static 'waveform_fy.png' %}" >
 		
-	<img id="qaudious_logo_fz" src="qaudious_logo_fz.png" srcset="qaudious_logo_fz.png 1x">
+	<img id="qaudious_logo_fz" src="{% static 'qaudious_logo_fz.png' %}" >
 		
 	<div id="-_An_NLP_Based_Question_Answer_f">
 		<span>- An NLP Based Question Answering System for Academic Lecture Recordings.</span>
 	</div>
-	<img onclick="application.goToTargetView(event)" id="navbar_f" src="navbar_f.png" srcset="navbar_f.png 1x">
+	<img onclick="application.goToTargetView(event)" id="navbar_f" src="{% static 'navbar_f.png' %}" >
 		
-	<img onclick="application.goToTargetView(event)" id="back_f" src="back_f.png" srcset="back_f.png 1x">
+	<img onclick="application.goToTargetView(event)" id="back_f" src="{% static 'back_f.png' %}" >
 		
 	<svg class="Line_18_f" viewBox="0 0 445 3">
 		<path id="Line_18_f" d="M 445 3 L 0 0">
 		</path>
 	</svg>
-	<img id="ql_f" src="ql_f.png" srcset="ql_f.png 1x">
+	<img id="ql_f" src="{% static 'ql_f.png' %}" >
 		
 	<svg class="Rectangle_12_f">
 		<rect id="Rectangle_12_f" rx="0" ry="0" x="0" y="0" width="5" height="9">

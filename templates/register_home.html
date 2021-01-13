@@ -1,3 +1,4 @@
+{%load static%}
 <!DOCTYPE html>
 <html>
 <head>
@@ -3183,9 +3184,9 @@ window.application = new Application();
 </head>
 <body>
 <div id="register_home">
-	<img id="waveform_c" src="waveform_c.png" srcset="waveform_c.png 1x">
+	<img id="waveform_c" src="{% static 'waveform_c.png' %}" >
 		
-	<img id="qaudious_logo_c" src="qaudious_logo_c.png" srcset="qaudious_logo_c.png 1x">
+	<img id="qaudious_logo_c" src="{% static 'qaudious_logo_c.png' %}" >
 		
 	<svg class="Rectangle_1_c">
 		<rect id="Rectangle_1_c" rx="0" ry="0" x="0" y="0" width="830" height="900">
@@ -3194,9 +3195,9 @@ window.application = new Application();
 	<div id="-_An_NLP_Based_Question_Answer_c">
 		<span>- An NLP Based Question Answering System for Academic Lecture Recordings.</span>
 	</div>
-	<img onclick="application.goToTargetView(event)" id="navbar_c" src="navbar_c.png" srcset="navbar_c.png 1x">
+	<img onclick="application.goToTargetView(event)" id="navbar_c" src="{% static 'navbar_c.png' %}" >
 		
-	<img onclick="application.goToTargetView(event)" id="arrow_c" src="arrow_c.png" srcset="arrow_c.png 1x">
+	<img onclick="application.goToTargetView(event)" id="arrow_c" src="{% static 'arrow_c.png' %}" >
 		
 	<svg class="Ellipse_7_da">
 		<ellipse id="Ellipse_7_da" rx="439.5" ry="314.5" cx="439.5" cy="314.5">
@@ -3221,7 +3222,7 @@ window.application = new Application();
 		<path id="Line_18_df" d="M 445 3 L 0 0">
 		</path>
 	</svg>
-	<img id="ql_dg" src="ql_dg.png" srcset="ql_dg.png 1x">
+	<img id="ql_dg" src="{% static 'ql_dg.png' %}" >
 		
 	<div id="Sign_in">
 		<span>Sign in</span>

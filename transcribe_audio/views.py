@@ -51,41 +51,5 @@ def drive_page(request):
     return render(request,"drive.html")
 
 
-@require_http_methods(['GET', 'POST'])
 def home_view(request):
-    """
-    Main Home page
-    """
-    try:
-
-        # GET method, return HTML page
-        if request.method == 'GET':
-            samples = models.AudioDataModel.objects.all()
-
-            pending_jobs = models.AudioDataModel.objects.filter(status='PEN').count()
-            show_timer = False
-            if pending_jobs > 0:
-                show_timer = True
-            return render(request, 'home.html', {'samples': samples, 'show_timer': show_timer})
-
-        # POST request, process the uploaded Audio file
-        uploaded_file = request.FILES['uploaded_file']
-        print("11111111111111111111")
-        audio_data = models.AudioDataModel()
-        print("2222222222222222222")
-        audio_data.uploaded_file=uploaded_file
-        audio_data.save()
-        # audio_data = models.AudioDataModel.objects.create(uploaded_file=uploaded_file)
-        # request.session["transcript"]=audio_data
-        # Begin processing
-        tasks.process_uploaded_file(audio_data.id)
-        return HttpResponseRedirect('/')
-
-    except Exception as e:
-
-        audio_data.status = 'ERR'
-        audio_data.error_occurred = True
-        audio_data.error_message = str(e)
-        audio_data.save()
-
-        return HttpResponse(f'Error: {str(e)}')
+    return render(request,"home.html")

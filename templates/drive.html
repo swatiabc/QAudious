@@ -1,3 +1,4 @@
+{%load static%}
 <!DOCTYPE html>
 <html>
 <head>
@@ -3189,16 +3190,16 @@ window.application = new Application();
 </head>
 <body>
 <div id="drive">
-	<img id="waveform_es" src="waveform_es.png" srcset="waveform_es.png 1x">
+	<img id="waveform_es" src="{% static 'waveform_es.png' %}" >
 		
-	<img id="qaudious_logo_et" src="qaudious_logo_et.png" srcset="qaudious_logo_et.png 1x">
+	<img id="qaudious_logo_et" src="{% static 'qaudious_logo_et.png' %}" >
 		
 	<div id="-_An_NLP_Based_Question_Answer_eu">
 		<span>- An NLP Based Question Answering System for Academic Lecture Recordings.</span>
 	</div>
-	<img id="navbar_ev" src="navbar_ev.png" srcset="navbar_ev.png 1x">
+	<img id="navbar_ev" src="{% static 'navbar_ev.png' %}" >
 		
-	<img id="arrow_ew" src="arrow_ew.png" srcset="arrow_ew.png 1x">
+	<img id="arrow_ew" src="{% static 'arrow_ew.png' %}" >
 		
 	<svg class="Rectangle_9_ex">
 		<rect id="Rectangle_9_ex" rx="161.5" ry="161.5" x="0" y="0" width="1573" height="323">
@@ -3207,19 +3208,19 @@ window.application = new Application();
 	<div id="Upload_Media_ey">
 		<span>Upload Media</span>
 	</div>
-	<img id="back_ez" src="back_ez.png" srcset="back_ez.png 1x">
+	<img id="back_ez" src="{% static 'back_ez.png' %}" >
 		
 	<svg class="Line_18_e" viewBox="0 0 445 3">
 		<path id="Line_18_e" d="M 445 3 L 0 0">
 		</path>
 	</svg>
-	<img id="ql_e" src="ql_e.png" srcset="ql_e.png 1x">
+	<img id="ql_e" src="{% static 'ql_e.png' %}" >
 		
 	<svg class="Rectangle_10_e">
 		<rect id="Rectangle_10_e" rx="0" ry="0" x="0" y="0" width="870" height="547">
 		</rect>
 	</svg>
-	<img id="cloud_e" src="cloud_e.png" srcset="cloud_e.png 1x">
+	<img id="cloud_e" src="{% static 'cloud_e.png' %}" >
 		
 	<div id="Drive_e">
 		<span>Drive</span>
@@ -3234,7 +3235,7 @@ window.application = new Application();
 	<div id="Open">
 		<span>Open</span>
 	</div>
-	<img onclick="application.goToTargetView(event)" id="Image_1_e" src="Image_1_e.png" srcset="Image_1_e.png 1x">
+	<img onclick="application.goToTargetView(event)" id="Image_1_e" src="{% static 'Image_1_e.png' %}" >
 		
 	<div id="Select_Media_e">
 		<span>Select Media</span>

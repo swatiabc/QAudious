@@ -1,3 +1,4 @@
+{% load static%}
 <!DOCTYPE html>
 <html>
 <head>
@@ -3124,14 +3125,14 @@ window.application = new Application();
 </head>
 <body>
 <div id="upload">
-	<img id="waveform_do" src="waveform_do.png" srcset="waveform_do.png 1x">
+	<img id="waveform_do"  src="{% static 'waveform_do.png' %}" >
 		
-	<img id="qaudious_logo_dp" src="qaudious_logo_dp.png" srcset="qaudious_logo_dp.png 1x">
+	<img id="qaudious_logo_dp" src="{% static 'qaudious_logo_dp.png' %}" >
 		
 	<div id="-_An_NLP_Based_Question_Answer_dq">
 		<span>- An NLP Based Question Answering System for Academic Lecture Recordings.</span>
 	</div>
-	<img onclick="application.goToTargetView(event)" id="navbar_dr" src="navbar_dr.png" srcset="navbar_dr.png 1x">
+	<img onclick="application.goToTargetView(event)" id="navbar_dr" src="{% static 'navbar_dr.png' %}" >
 		
 	<svg class="Ellipse_4_ds">
 		<ellipse onclick="application.goToTargetView(event)" id="Ellipse_4_ds" rx="21.5" ry="22" cx="21.5" cy="22">
@@ -3152,7 +3153,7 @@ window.application = new Application();
 	<div id="Upload_Media">
 		<span>Upload Media</span>
 	</div>
-	<img onclick="application.goToTargetView(event)" id="back_dx" src="back_dx.png" srcset="back_dx.png 1x">
+	<img onclick="application.goToTargetView(event)" id="back_dx" src="{% static 'back_dx.png' %}" >
 		
 	<div id="or">
 		<span>or</span>
@@ -3165,7 +3166,7 @@ window.application = new Application();
 		<path id="Line_18_d" d="M 445 3 L 0 0">
 		</path>
 	</svg>
-	<img id="ql_d" src="ql_d.png" srcset="ql_d.png 1x">
+	<img id="ql_d" src="{% static 'ql_d.png' %}" >
 		
 	<svg class="ic_music_note_24px" viewBox="6 3 63.939 95.909">
 		<path onclick="application.goToTargetView(event)" id="ic_music_note_24px" d="M 37.96954727172852 3.000001907348633 L 37.96954727172852 59.21311187744141 C 34.82587051391602 57.4015007019043 31.20265769958496 56.28257369995117 27.31303024291992 56.28257369995117 C 15.53758239746094 56.28257369995117 6.000003814697266 65.82014465332031 6.000003814697266 77.59559631347656 C 6.000003814697266 89.37103271484375 15.53758239746094 98.90862274169922 27.31303024291992 98.90862274169922 C 39.08847808837891 98.90862274169922 48.62606048583984 89.37103271484375 48.62606048583984 77.59559631347656 L 48.62606048583984 24.31302642822266 L 69.93909454345703 24.31302642822266 L 69.93909454345703 3.000001907348633 L 37.96954727172852 3.000001907348633 Z">

@@ -19,9 +19,17 @@ def qa_saved_page(request):
 
 @require_http_methods(['GET', 'POST'])
 def post_question(request):
+
+    if 'transcript' not in request.session:
+        return HttpResponseRedirect("upload.html")
+
+    abc = AudioDataModel.objects.get(id=request.session['transcript'])  
+    print("---------------------------------session",abc.id)  
     print("post question-------------------",request.method)
     if request.method == 'GET': 
         return render(request,"post_question.html")
+    
+    
 
     print("post question-------------------",request.method)
     uploaded_question = request.POST['uploaded_question']

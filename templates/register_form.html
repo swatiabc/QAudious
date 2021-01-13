@@ -1,3 +1,4 @@
+{%load static%}
 <!DOCTYPE html>
 <html>
 <head>
@@ -3305,11 +3306,11 @@ window.application = new Application();
 	<div id="Register_cg">
 		<span>Register</span>
 	</div>
-	<img onclick="application.goToTargetView(event)" id="back_ch" src="back_ch.png" srcset="back_ch.png 1x">
+	<img onclick="application.goToTargetView(event)" id="back_ch" src="{% static 'back_ch.png' %}" >
 		
-	<img onclick="application.goToTargetView(event)" id="navbar_ci" src="navbar_ci.png" srcset="navbar_ci.png 1x">
+	<img onclick="application.goToTargetView(event)" id="navbar_ci" src="{% static 'navbar_ci.png' %}" >
 		
-	<img id="ql_cj" src="ql_cj.png" srcset="ql_cj.png 1x">
+	<img id="ql_cj" src="{% static 'ql_cj.png' %}" >
 		
 	<div id="Last_Name_">
 		<span>Last Name:</span><br>

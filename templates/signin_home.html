@@ -1,3 +1,4 @@
+{%load static%}
 <!DOCTYPE html>
 <html>
 <head>
@@ -3182,9 +3183,9 @@ window.application = new Application();
 </head>
 <body>
 <div id="signin_home">
-	<img id="waveform" src="waveform.png" srcset="waveform.png 1x">
+	<img id="waveform" src="{% static 'waveform.png' %}" >
 		
-	<img id="qaudious_logo" src="qaudious_logo.png" srcset="qaudious_logo.png 1x">
+	<img id="qaudious_logo" src="{% static 'qaudious_logo.png' %}" >
 		
 	<svg class="Rectangle_1">
 		<rect id="Rectangle_1" rx="0" ry="0" x="0" y="0" width="830" height="900">
@@ -3197,11 +3198,11 @@ window.application = new Application();
 		<path id="Line_18" d="M 445 3 L 0 0">
 		</path>
 	</svg>
-	<img onclick="application.goToTargetView(event)" id="navbar" src="navbar.png" srcset="navbar.png 1x">
+	<img onclick="application.goToTargetView(event)" id="navbar" src="{% static 'navbar.png' %}" >
 		
-	<img onclick="application.goToTargetView(event)" id="arrow" src="arrow.png" srcset="arrow.png 1x">
+	<img onclick="application.goToTargetView(event)" id="arrow" src="{% static 'arrow.png' %}" >
 		
-	<img id="ql" src="ql.png" srcset="ql.png 1x">
+	<img id="ql" src="{% static 'ql.png' %}" >
 		
 	<svg class="Ellipse_7">
 		<ellipse id="Ellipse_7" rx="439.5" ry="314.5" cx="439.5" cy="314.5">

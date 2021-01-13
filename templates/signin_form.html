@@ -1,3 +1,4 @@
+{%load static%}
 <!DOCTYPE html>
 <html>
 <head>
@@ -3273,9 +3274,9 @@ window.application = new Application();
 	<div id="Sign_In_bp">
 		<span>Sign In</span>
 	</div>
-	<img onclick="application.goToTargetView(event)" id="navbar_bq" src="navbar_bq.png" srcset="navbar_bq.png 1x">
+	<img onclick="application.goToTargetView(event)" id="navbar_bq" src="{% static 'navbar_bq.png' %}" >
 		
-	<img id="ql_br" src="ql_br.png" srcset="ql_br.png 1x">
+	<img id="ql_br" src="{% static 'ql_br.png' %}" >
 		
 	<div id="Email_">
 		<span>Email:</span><br>
@@ -3312,16 +3313,16 @@ window.application = new Application();
 	</svg>
 	<div id="Repeat_Grid_4">
 		<div id="Repeat_Grid_4_0" class="">
-			<img id="Image_2" src="Image_2.png" srcset="Image_2.png 1x">
+			<img id="Image_2" src="{% static 'Image_2.png' %}" >
 				
 		</div>
 	</div>
-	<img id="Image_3" src="Image_3.png" srcset="Image_3.png 1x">
+	<img id="Image_3" src="{% static 'Image_3.png' %}" >
 		
 	<div id="New_User">
 		<span>New User?</span>
 	</div>
-	<img onclick="application.goToTargetView(event)" id="back" src="back.png" srcset="back.png 1x">
+	<img onclick="application.goToTargetView(event)" id="back" src="{% static 'back.png' %}" >
 		
 	<svg class="Ellipse_4_b">
 		<ellipse onclick="application.goToTargetView(event)" id="Ellipse_4_b" rx="21.5" ry="22" cx="21.5" cy="22">

@@ -18,6 +18,7 @@ from django.urls import path,include
 from transcribe_audio.views import( upload_page, local_page, drive_page,home_view,)
 from question_answer.views import(question_page,qa_display_page,qa_saved_page,post_question, )
 
+
 urlpatterns = [
     path('upload.html', upload_page),
     path('local.html', local_page),
