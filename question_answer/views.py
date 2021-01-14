@@ -7,6 +7,7 @@ from transcribe_audio.models import AudioDataModel
 
 # Create your views here.
 def question_page(request):
+    print("-------------question_2-----------------------")
     return render(request,"question_2.html")
 
 
@@ -44,4 +45,4 @@ def post_question(request):
     print(qa_data.transcript.transcript)
     print("---------------------------------------------")
     qa_data.save()
-    return HttpResponseRedirect("question_2.html")
+    return HttpResponseRedirect("qa_display.html")

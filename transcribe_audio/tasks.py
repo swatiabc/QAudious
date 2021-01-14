@@ -36,8 +36,9 @@ def convert_into_wave(audio_data):
 
     # Convert into WAV format
     if file_extension != 'wav':
-        audio = AudioSegment.from_file(uploaded_file_name, file_extension)
-
+        print("-----------------------", uploaded_file_name, file_extension)
+        audio = AudioSegment.from_mp3(uploaded_file_name)
+        print("mp3--------------------------------")
         # Generate a unique name and then export as WAV
         exported_file_name = f'{str(uuid4())}.wav'
         audio.export(exported_file_name, format='wav')
