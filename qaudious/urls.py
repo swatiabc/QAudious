@@ -16,7 +16,8 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path,include
 from transcribe_audio.views import( upload_page, local_page, drive_page,home_view,)
-from question_answer.views import(question_page,qa_display_page,qa_saved_page,post_question, )
+from question_answer.views import(question_page,qa_display_page,qa_saved_page,post_question,
+            qa_delete_confirm_page, qa_deleted_page,)
 
 
 urlpatterns = [
@@ -28,6 +29,8 @@ urlpatterns = [
     path('question_2.html',question_page),
     path('qa_display.html',qa_display_page),
     path('qa_saved.html',qa_saved_page),
+    path('qa_deleted.html',qa_deleted_page),
+    path('qa_delete_confirm.html',qa_delete_confirm_page),
     path('admin/', admin.site.urls),
 ]
 

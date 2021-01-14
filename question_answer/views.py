@@ -15,6 +15,13 @@ def qa_display_page(request):
     return render(request,"qa_display.html")
 
 
+def qa_delete_confirm_page(request):
+    return render(request, "qa_delete_confirm.html")
+
+
+def qa_deleted_page(request):
+    return render(request,"qa_deleted.html")
+
 def qa_saved_page(request):
     return render(request,"qa_saved.html")
 
