@@ -3360,8 +3360,6 @@ window.application = new Application();
 </script>
 </head>
 <body>
-	<form method="post" enctype="multipart/form-data" >
-		{% csrf_token %}
 
 <div id="qa_delete_confirm">
 	<img id="waveform_qk" src="{% static 'waveform_qk.png' %}" >
@@ -3465,11 +3463,9 @@ window.application = new Application();
 			</svg>
 			<div id="Yes_rh">
 				<span>Yes</span>
-				<input type="submit" class="file_upload" >
 			</div>
 		</div>
 	</div>
 </div>
-</form>
 </body>
 </html>
