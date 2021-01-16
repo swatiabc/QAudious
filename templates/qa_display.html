@@ -3204,6 +3204,29 @@ var Application = function() {
 }
 
 window.application = new Application();
+
+
+/*************edited by swati*****************/
+
+const xhr = new XMLHttpRequest()
+    const method = 'GET'
+    const url = '/qa_data'
+
+    const responseType = "json"
+    xhr.responseType = responseType
+    xhr.open(method, url)
+    xhr.onload = function() {
+		console.log(xhr.response)
+		
+		var question = xhr.response.question
+		var answer = xhr.response.answer
+		var ques_ans = "Question : " + question + " \n\nAnswer : " +answer
+		document.getElementById('question_answer').value =ques_ans;
+    }
+    xhr.send()
+/*************edited by swati*****************/
+
+
 </script>
 </head>
 <body>
@@ -3251,6 +3274,9 @@ window.application = new Application();
 		<rect id="Rectangle_26" rx="0" ry="0" x="0" y="0" width="1392" height="185">
 		</rect>
 	</svg>
+	<!-- <input name="question_answer" type="textarea" class="Rectangle_26" readonly > -->
+	<textarea id="question_answer" rows="10" cols="70" class="Rectangle_26" readonly ></textarea>
+
 	<svg class="ic_cancel_24px" viewBox="0 0 42.162 42.162">
 		<path onclick="application.goToTargetView(event)" id="ic_cancel_24px" d="M 21.08122634887695 1.310794497304344e-14 C 9.423306465148926 7.930788119866854e-15 7.930788119866854e-15 9.423306465148926 1.310794497304344e-14 21.08122634887695 C 1.828510013215413e-14 32.73914337158203 9.423306465148926 42.16245269775391 21.08122634887695 42.16245269775391 C 32.73914337158203 42.16245269775391 42.16245269775391 32.73914337158203 42.16245269775391 21.08122634887695 C 42.16245269775391 9.423305511474609 32.73914337158203 1.828510013215413e-14 21.08122634887695 1.310794497304344e-14 Z M 31.62183952331543 28.64938545227051 L 28.64938545227051 31.62183952331543 L 21.08122634887695 24.05367851257324 L 13.51306438446045 31.62183952331543 L 10.54061222076416 28.64938545227051 L 18.10877227783203 21.08122634887695 L 10.54061222076416 13.51306438446045 L 13.51306438446045 10.54061222076416 L 21.08122634887695 18.10877227783203 L 28.64938545227051 10.54061222076416 L 31.62183952331543 13.51306438446045 L 24.05367851257324 21.08122634887695 L 31.62183952331543 28.64938545227051 Z">
 		</path>

@@ -17,7 +17,7 @@ from django.contrib import admin
 from django.urls import path,include
 from transcribe_audio.views import( upload_page, local_page, drive_page,home_view,)
 from question_answer.views import(question_page,qa_display_page,qa_saved_page,post_question,
-            qa_delete_confirm_page, qa_deleted_page,)
+            qa_delete_confirm_page, qa_deleted_page,use_ajax_for_session, )
 
 
 urlpatterns = [
@@ -31,6 +31,7 @@ urlpatterns = [
     path('qa_saved.html',qa_saved_page),
     path('qa_deleted.html',qa_deleted_page),
     path('qa_delete_confirm.html',qa_delete_confirm_page),
+    path('qa_data', use_ajax_for_session ),
     path('admin/', admin.site.urls),
 ]
 

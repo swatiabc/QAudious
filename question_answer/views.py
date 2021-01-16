@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.http import HttpResponse, HttpResponseRedirect
+from django.http import HttpResponse, HttpResponseRedirect, JsonResponse
 from django.views.decorators.http import require_http_methods
 
 from . import model_answer
@@ -17,7 +17,7 @@ def qa_display_page(request):
     if 'question' not in request.session:
         return HttpResponseRedirect("post_question.html")
 
-    if request.method == 'GET': 
+    if request.method == 'GET':
         return render(request,"qa_display.html")
     
     qa_data = models.QADataModel()
@@ -44,6 +44,7 @@ def qa_deleted_page(request):
     if 'question' not in request.session:
         return HttpResponseRedirect("post_question.html")
     del request.session["question"]
+    del request.session["answer"]
     return render(request,"qa_deleted.html")
 
 def qa_saved_page(request):
@@ -60,15 +61,12 @@ def post_question(request):
         return render(request,"post_question.html")
 
     uploaded_question = request.POST['uploaded_question']
-    # qa_data = models.QADataModel()
-    # qa_data.question = uploaded_question
-    # try:
-    #     qa_data.transcript = AudioDataModel.objects.get(id=request.session['transcript'])
-    # except (KeyError, AudioDataModel.DoesNotExist):
-    #     qa_data.transcript = None
-    
-    # qa_data.answer = model_answer.get_answer()
-    # qa_data.save()
     request.session["question"]=uploaded_question
-    # request.session["answer"]=model_answer.get_answer()
+    request.session["answer"]=model_answer.get_answer()
     return HttpResponseRedirect("qa_display.html")
+
+
+def use_ajax_for_session(request):
+    qa_data = { "question" : request.session["question"],
+                "answer" : request.session["answer"] }
+    return JsonResponse(data=qa_data ,status=200)
