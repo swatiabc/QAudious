@@ -931,4 +931,7 @@ env/Scripts/activate.bat
 env/Scripts/easy_install-3.7.exe
 env/Scripts/easy_install.exe
 env/Scripts/python.exe
-env/Scripts/pythonw.exe
+env/
+venv
+*.pyc
+db.sqlite3

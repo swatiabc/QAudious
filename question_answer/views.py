@@ -27,7 +27,7 @@ def qa_display_page(request):
     except (KeyError, AudioDataModel.DoesNotExist):
         qa_data.transcript = None
     
-    qa_data.answer = model_answer.get_answer()
+    qa_data.answer = request.session["answer"]
     qa_data.save()
 
     return render(request,"qa_saved.html")
@@ -63,6 +63,15 @@ def post_question(request):
     uploaded_question = request.POST['uploaded_question']
     request.session["question"]=uploaded_question
     request.session["answer"]=model_answer.get_answer()
+    #abstract = None
+    try:
+        abstract = AudioDataModel.objects.get(id=request.session['transcript'])
+    except (KeyError, AudioDataModel.DoesNotExist):
+        abstract = None
+    print(type(abstract),abstract,"-0-0-0-0-0-0-0-0--0-0--0-0-0-0-0-0-0-")
+    print(type(uploaded_question),uploaded_question,"9-9090909-0-90--090-098")
+    request.session["answer"] = model_answer.answer_question(uploaded_question,abstract.transcript)
+
     return HttpResponseRedirect("qa_display.html")
 
 
