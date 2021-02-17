@@ -1,0 +1,1 @@
+web: gunicorn qaudious.wsgi --log-file -

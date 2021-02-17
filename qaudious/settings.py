@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = ')7xoc3u^pjp^mg(j2bl!w-o7@j0o009^s8)0c3sd8x$c8(&3a_'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False # edited
 
 ALLOWED_HOSTS = []
 
@@ -138,6 +138,6 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR,"templates"),
 ]
 
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
 django_heroku.settings(locals())
